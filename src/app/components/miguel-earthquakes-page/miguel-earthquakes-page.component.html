@@ -1,0 +1,8 @@
+<div class="container-md">
+    <h1>Noticias</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let info of earthquakesInfo">
+            <app-miguel-earthquake-card [earthquakeInfo]="info"></app-miguel-earthquake-card>
+        </div>
+    </div>
+</div>
