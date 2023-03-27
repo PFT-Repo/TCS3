@@ -10,13 +10,14 @@ import { MainpipePipe } from './pipes/mainpipe.pipe';
 import { CardJoseComponent } from './card-jose/card-jose.component';
 
 import { HttpClientModule } from "@angular/common/http";
+import { AitorComponentComponent } from './aitor-component/aitor-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainpipePipe,
-    CardJoseComponent
-   ChristianNoticiasComponent],
+    CardJoseComponent,
+   ChristianNoticiasComponent,AitorComponentComponent],
 
   imports: [
     BrowserModule,
