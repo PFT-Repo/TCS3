@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col" *ngFor="let n of data; index as i">
+            <app-cartadani [item]="data[i]"></app-cartadani>
+        </div>
+    </div>
+</div>
