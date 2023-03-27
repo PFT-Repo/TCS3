@@ -1,0 +1,23 @@
+<main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Earthquakes</h1>
+          <p class="lead text-body-secondary">Some info about different earthquakes</p>
+        </div>
+      </div>
+    </section>
+  
+    <div class="row row-col-1 row-col-md-3 d-flex justify-content-center">
+      <div *ngFor="let earthquake of earthquakes"  class="card me-2 mf-2 mb-2 mt-2" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{earthquake.titulo}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{earthquake.fecha}}</h6>
+          <p class="card-text">{{earthquake.descripcion}}</p>
+          <p>{{earthquake.ubicacion}}</p>
+        </div>
+      </div>
+    </div>
+  
+  </main>
