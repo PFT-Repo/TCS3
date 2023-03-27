@@ -1,17 +1,15 @@
-import { NgModule, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { Data } from '../dataJson';
 import { MainserviceService } from '../services/mainservice.service';
 
-
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+@Component({
+  selector: 'app-card-jose',
+  templateUrl: './card-jose.component.html',
+  styleUrls: ['./card-jose.component.scss']
 })
-export class ComponentsModule {
+
+
+export class CardJoseComponent {
   infos: Data[] = [];
   @Input() data!:Data;
 
