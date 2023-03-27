@@ -13,7 +13,8 @@ import { CartadaniComponent } from './cartadani/cartadani.component';
   imports: [
     CommonModule
   ],exports:[
-    ListadaniComponent
+    ListadaniComponent,
+    CartadaniComponent
   ]
 })
 export class ComponentsModule { }
