@@ -1,0 +1,31 @@
+<body>
+  <div *ngIf="data">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col col-md-4 mb-3" *ngFor="let item of data">
+          <div
+            class="card d-flex flex-column"
+            style="
+              width: 18rem;
+              background-color: #f2f2f2;
+              border: 1px solid #cccccc;
+              box-shadow: 0px 3px 3px #cccccc;
+            "
+          >
+            <div class="card-body" style="padding: 1rem">
+              <!--
+            <img src="..." class="card-img-top" alt="..." />
+            -->
+              <p style="font-weight: bold; font-size: 1.2rem">
+                {{ item.titulo }}
+              </p>
+              <p style="color: #666666; font-size: 0.8rem">{{ item.fecha }}</p>
+              <p style="font-size: 1rem">{{ item.descripcion }}</p>
+              <p style="color: #666666; font-size: 0.8rem">{{ item.pais }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
