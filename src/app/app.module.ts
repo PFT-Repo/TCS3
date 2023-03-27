@@ -9,7 +9,7 @@ import { MainpipePipe } from './pipes/mainpipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    MainpipePipe
+    MainpipePipe,
   ],
   imports: [
     BrowserModule,
